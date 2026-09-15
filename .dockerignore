@@ -1,0 +1,12 @@
+.git
+.env*
+build
+data
+node_modules
+test
+config/profile*.json
+*.sqlite*
+*.bak
+*.log
+.DS_Store
+.vscode

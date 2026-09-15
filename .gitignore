@@ -1,0 +1,13 @@
+node_modules
+build
+.env*
+!.env.template
+config/profile*.json
+!config/profile.example.json
+data/*
+!data/.gitkeep
+*.sqlite*
+*.bak
+*.log
+.DS_Store
+.vscode/

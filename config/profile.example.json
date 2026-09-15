@@ -1,0 +1,96 @@
+{
+  "profileName": "Meine Wohnungssuche – Beispiel Berlin",
+  "numericCriteria": {
+    "warmRent": {
+      "label": "Warmmiete",
+      "weight": 30,
+      "rejectOutside": true,
+      "rejectWhenMissing": false,
+      "perfect": { "max": 1100 },
+      "okay": { "max": 1300 },
+      "mediocre": { "max": 1500 }
+    },
+    "coldRent": {
+      "label": "Kaltmiete",
+      "weight": 10,
+      "rejectOutside": false,
+      "rejectWhenMissing": false,
+      "perfect": { "max": 850 },
+      "okay": { "max": 1050 },
+      "mediocre": { "max": 1250 }
+    },
+    "livingSpace": {
+      "label": "Wohnfläche",
+      "weight": 25,
+      "rejectOutside": true,
+      "rejectWhenMissing": false,
+      "perfect": { "min": 65 },
+      "okay": { "min": 55 },
+      "mediocre": { "min": 45 }
+    },
+    "rooms": {
+      "label": "Zimmer",
+      "weight": 15,
+      "rejectOutside": false,
+      "rejectWhenMissing": false,
+      "perfect": { "min": 3 },
+      "okay": { "min": 2.5 },
+      "mediocre": { "min": 2 }
+    }
+  },
+  "locationCriterion": {
+    "label": "Lage",
+    "weight": 15,
+    "rejectOutside": false,
+    "perfect": ["Kreuzberg", "Neukölln"],
+    "okay": ["Tempelhof", "Schöneberg"],
+    "mediocre": ["Berlin"]
+  },
+  "keywordCriterion": {
+    "label": "Ausstattung & Text",
+    "weight": 5,
+    "positive": ["Balkon", "Einbauküche", "Aufzug"],
+    "negative": ["möbliert", "Staffelmiete"],
+    "hardExclusions": ["WBS erforderlich", "Tauschwohnung"]
+  },
+  "scoring": {
+    "perfectAt": 82,
+    "okayAt": 65,
+    "mediocreAt": 45,
+    "missingValueFactor": 0.2
+  },
+  "notifications": {
+    "minimumTier": "mediocre",
+    "postRejected": false
+  },
+  "application": {
+    "template": "Guten Tag,\n\ndie Wohnung „{{title}}“ gefällt mir sehr gut. Falls sie noch verfügbar ist, würde ich mich über die Möglichkeit einer Besichtigung freuen.\n\nKurz zu mir:\n{{name}}, {{age}}\n{{employment}}\n{{income}}\n{{household}}\n{{extras}}\n\nSie erreichen mich unter {{phone}} oder per E-Mail an {{email}}.\n\nViele Grüße\n{{name}}",
+    "applicant": {
+      "name": "DEIN NAME",
+      "age": "DEIN ALTER",
+      "employment": "DEINE BERUFLICHE SITUATION.",
+      "income": "OPTIONALE EINKOMMENSANGABE.",
+      "household": "WER ZIEHT EIN.",
+      "phone": "DEINE TELEFONNUMMER",
+      "email": "DEINE E-MAIL",
+      "extras": "OPTIONALE INFORMATIONEN, Z. B. SCHUFA UND UNTERLAGEN VORHANDEN."
+    },
+    "additionalApplicants": [
+      {
+        "label": "Mitbewohner",
+        "allowedUserPosition": 2,
+        "template": "Guten Tag,\n\nbeim Lesen des Inserats für „{{title}}“ hatte ich direkt das Gefühl, dass die Wohnung sehr gut zu meiner Suche passt. Ich würde sie daher gerne persönlich kennenlernen.\n\nZu mir:\n{{name}}, {{age}}\n{{employment}}\n{{income}}\n{{household}}\n{{extras}}\n\nFür Rückfragen oder eine Terminabsprache bin ich unter {{phone}} oder per E-Mail an {{email}} erreichbar.\n\nBeste Grüße\n{{name}}",
+        "applicant": {
+          "name": "NAME DES MITBEWOHNERS",
+          "age": "ALTER DES MITBEWOHNERS",
+          "employment": "BERUFLICHE SITUATION DES MITBEWOHNERS.",
+          "income": "OPTIONALE EINKOMMENSANGABE.",
+          "household": "WER ZIEHT EIN.",
+          "phone": "TELEFONNUMMER DES MITBEWOHNERS",
+          "email": "E-MAIL DES MITBEWOHNERS",
+          "extras": "OPTIONALE INFORMATIONEN, Z. B. SCHUFA UND UNTERLAGEN VORHANDEN."
+        }
+      }
+    ]
+  }
+}

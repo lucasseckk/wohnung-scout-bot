@@ -1,0 +1,27 @@
+From: ImmoScout24 Suchauftrag <suchauftrag@immobilienscout24.de>
+To: wohnungssuche@example.com
+Subject: Zwei neue Wohnungen in deinem Suchauftrag
+Date: Mon, 20 Jul 2026 10:15:00 +0200
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<!doctype html>
+<html lang="de">
+  <body>
+    <h1>Neue Treffer für deinen Suchauftrag</h1>
+    <article class="listing">
+      <h2><a href="https://www.immobilienscout24.de/expose/170000001?referrer=alert">Helle 3-Zimmer-Wohnung mit Balkon</a></h2>
+      <img src="https://images.example.test/wohnung-1.jpg" alt="Wohnung">
+      <p>Adresse: 10997 Berlin Kreuzberg</p>
+      <p>Warmmiete: 1.050,00 € · Kaltmiete: 820,00 € · Wohnfläche: 68,5 m² · Zimmer: 3</p>
+      <p>Einbauküche, Balkon und Aufzug. Etage: 3. OG · Bezugsfrei ab: 01.09.2026 · Veröffentlicht am 20.07.2026.</p>
+    </article>
+    <article class="listing">
+      <h2>Ruhige Wohnung am Stadtrand</h2>
+      <p>Ort: 13599 Berlin Spandau</p>
+      <p>Warmmiete: 1.420 € · Kaltmiete: 1.150 € · 50 m² · 2 Zimmer</p>
+      <p>Möbliert, Keller vorhanden.</p>
+      <a href="https://www.immobilienscout24.de/expose/170000002">Zum Exposé</a>
+    </article>
+  </body>
+</html>
